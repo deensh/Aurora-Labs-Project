@@ -30,7 +30,6 @@
       <userRemoteConfigs>
         <hudson.plugins.git.UserRemoteConfig>
           <url>https://github.com/deensh/Aurora-Labs-Project.git</url>
-<!--          <credentialsId>github</credentialsId>-->
         </hudson.plugins.git.UserRemoteConfig>
       </userRemoteConfigs>
       <branches>
