@@ -1,18 +1,13 @@
 pipeline {
     agent any
-
     environment {
         PROJECT_NAME    = 'Aurora-Labs-Project'
         GOPATH          = "${WORKSPACE}"
-        GOBIN           = "${GOPATH}"
-        PROJECT         = "${GOBIN}"
-
     }
-
     stages {
         stage('Print Hellow World') {
             steps {
-               sh 'python3 ${GOBIN}/main.py'
+               sh 'python3 ${GOPATH}/main.py'
             }
         }
     }
