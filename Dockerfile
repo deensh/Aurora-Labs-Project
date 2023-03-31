@@ -2,10 +2,10 @@ FROM jenkins/jenkins:latest
 
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
 ENV CASC_JENKINS_CONFIG /var/jenkins_home/casc.yaml
-COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
+COPY config/plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN jenkins-plugin-cli -f /usr/share/jenkins/ref/plugins.txt
-COPY casc.yaml /var/jenkins_home/casc.yaml
-COPY config.xml /usr/share/jenkins/ref/jobs/Aurora-Labs-Project/config.xml
+COPY config/casc.yaml /var/jenkins_home/casc.yaml
+COPY config/config.xml /usr/share/jenkins/ref/jobs/Aurora-Labs-Project/config.xml
 
 USER root
 RUN apt-get update
