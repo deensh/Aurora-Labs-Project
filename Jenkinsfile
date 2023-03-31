@@ -1,8 +1,6 @@
 pipeline {
     agent any
-    options {
-        ansiColor('xterm')
-    }
+
     environment {
         PROJECT_NAME    = 'Aurora-Labs-Project'
         GOPATH          = "${WORKSPACE}"
