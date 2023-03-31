@@ -7,7 +7,7 @@ services:
     restart: 'always'
     networks:
       - 'jenkins'
-    image: 'jenkins:test'
+    image: 'jenkins:latest'
     environment:
       - 'JENKINS_ADMIN_ID=admin'
       - 'JENKINS_ADMIN_PASSWORD=password'
