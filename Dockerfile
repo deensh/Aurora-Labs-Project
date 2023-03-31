@@ -10,6 +10,3 @@ COPY config.xml /usr/share/jenkins/ref/jobs/Aurora-Labs-Project/config.xml
 USER root
 RUN apt-get update
 RUN apt-get install -y python3
-
-#USER jenkins
-

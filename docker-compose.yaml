@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+
+  jenkins:
+    container_name: 'jenkins'
+    restart: 'always'
+    networks:
+      - 'jenkins'
+    image: 'jenkins:test'
+    environment:
+      - 'JENKINS_ADMIN_ID=admin'
+      - 'JENKINS_ADMIN_PASSWORD=password'
+    ports:
+        - '8080:8080'
+
+networks:
+  jenkins:
