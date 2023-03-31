@@ -1,7 +1,7 @@
 # **Aurora-Labs-Project**
 
-* This Project jenkins service, that include:
-  * Aurora-Labs-Project job, initiate python job on any merge request and print 'Devops is great'. 
+* This Project is a jenkins service, that include:
+  * Aurora-Labs-Project job,which initiate python job on any merge request and print 'Devops is great'. 
 
   
 ## **Getting started**
